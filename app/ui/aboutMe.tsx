@@ -14,13 +14,16 @@ export const SectionInformation=()=>{
       del proyecto. Esta combinación de habilidades técnicas y de liderazgo me ha permitido contribuir de
        manera significativa al éxito de múltiples proyectos de software.`
     return(
-        <div className="flex flex-col items-center justify-center bg-gray-600 w-screen min-h-screen">
-            <h1 className="text-3xl font-bold mb-4 text-black">About me</h1>
-            <div className="flex flex-nowrap items-center justify-center w-full p-10">
-                <p>dasd</p>
-                <Divider layout="vertical" />
-                <p className="p-10 text-black text-justify">{aboutMe}</p>
-
+        <div className="flex flex-col items-center justify-center w-screen min-h-screen">
+            <h1 className="text-3xl font-bold mb-4 text-white">About me</h1>
+            <div className="flex flex-nowrap items-center justify-center w-full px-10">
+                <div className="flex flex-col gap-5 h-full w-full">
+                    <h1>hola mundo</h1>
+                    <h1>hola mundo</h1>
+                    <h1>hola mundp</h1>
+                </div>
+                <Divider layout="vertical"/>   
+                <p className="border-l-2 border-dashed border-gray-500 p-10 text-gray-300 text-justify">{aboutMe}</p>
             </div>
             <Porcent/>
         </div>

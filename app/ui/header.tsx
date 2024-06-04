@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Button } from 'primereact/button';
+import Image from 'next/image';
 
 export const Header: FC = () => {
   return (
@@ -11,9 +12,9 @@ export const Header: FC = () => {
       </div>
       
       <div>
-        <Button label="Check" icon="pi pi-check" color='primary' />
+        <Image src="/imgs/profile.png" alt="Descripción de la imagen" width={200} height={100} />
       </div>
-      <div className='w-[30%] p-2 bordert-2 '>
+      <div className='w-[30%] px-10 text-justify bordert-2 '>
         <p>soy un desarrollador de software apacionado por la tecnologia...</p>
       </div>
     </div>
