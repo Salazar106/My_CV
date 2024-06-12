@@ -1,6 +1,8 @@
 import React from "react";
 import Porcent from "./knob";
 import { Divider } from 'primereact/divider';
+import { FaIdCard } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export const SectionInformation=()=>{
     const aboutMe=`Como desarrollador junior con experiencia en la creación 
@@ -16,16 +18,17 @@ export const SectionInformation=()=>{
     return(
         <div className="flex flex-col items-center justify-center w-screen min-h-screen">
             <h1 className="text-3xl font-bold mb-4 text-white">About me</h1>
-            <div className="flex flex-nowrap items-center justify-center w-full px-10">
-                <div className="flex flex-col gap-5 h-full w-full">
-                    <h1>hola mundo</h1>
-                    <h1>hola mundo</h1>
+            <div className="flex flex-wrap items-center justify-center w-full px-10">
+                <div className="flex flex-col gap-5 h-full md:w-[30%]">
+                    <p className="flex flex-nowrap items-center"><FaIdCard/>: 1037632160</p>
+                    <h1 className="flex flex-nowrap items-center "><FaMapMarkerAlt/>: Calle 37 sur # 33 - 77 Envigado Antioquia</h1>
                     <h1>hola mundp</h1>
                 </div>
-                <Divider layout="vertical"/>   
-                <p className="border-l-2 border-dashed border-gray-500 p-10 text-gray-300 text-justify">{aboutMe}</p>
+                <div className="md:w-[70%]">
+                    <p className="md:border-l-2 md:border-dashed border-gray-500 p-2 md:p-10 text-gray-300 text-justify">{aboutMe}</p>
+                </div>  
             </div>
-            <Porcent/>
+            {/* <Porcent/> */}
         </div>
     )
 }
