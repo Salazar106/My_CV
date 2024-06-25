@@ -1,5 +1,6 @@
 import React from "react";
 import { Fieldset } from 'primereact/fieldset';
+import Acordeon from "./acordeon";
 
 export default function Skills() {
     const legendTemplate = (
@@ -10,6 +11,7 @@ export default function Skills() {
 
     return (
         <div className="card">
+            <Acordeon/>
             <Fieldset legend={legendTemplate}>
                 <p className="m-0">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

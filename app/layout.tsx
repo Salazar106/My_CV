@@ -5,6 +5,8 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import { Header } from "./ui/header";
+import { NextUIProvider } from "@nextui-org/react";
+import Footer from "./ui/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +20,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header/>
-        {children}
-      </body>
+        <body className={inter.className}>
+          <NextUIProvider>
+            <Header />
+            <div className="min-h-[300px]  flex flex-col  items-center">
+              {children}
+            </div>
+            {/* <Footer /> */}
+          </NextUIProvider>
+        </body>
     </html>
   );
 }
