@@ -28,10 +28,10 @@ export default function RootLayout({
         <body className={inter.className}>
           <NextUIProvider>
             <Header />
-            <div className="min-h-[300px]  flex flex-col  items-center">
+            <div className="min-h-[95vh] flex flex-col  items-center">
               {children}
             </div>
-            {/* <Footer /> */}
+            <Footer />
           </NextUIProvider>
         </body>
     </html>

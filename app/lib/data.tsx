@@ -1,5 +1,5 @@
 import { Avatar, Tooltip } from "@nextui-org/react";
-import { FaMailBulk } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import Porcent from "../ui/knob";
 import {Image} from "@nextui-org/react";
 
@@ -367,4 +367,15 @@ export const navLinks = [
   }
 ];
 
-
+export const socialLinks=[
+  {
+    id: "linkedin",
+    label: <FaLinkedin/>,
+    link:'https://www.linkedin.com/in/jefersson-daniel-pe%C3%B1a-salazar-2b4ba1271/',
+  },
+  {
+    id: "github",
+    label: <FaGithub/>,
+    link:'https://github.com/Salazar106',
+  }
+]

@@ -2,7 +2,6 @@
 import React from "react";
 import { Accordion, AccordionItem, Avatar } from "@nextui-org/react";
 import dataAcordeon from "../lib/data";
-import Image from "next/image";
 
 export default function Acordeon() {
   const itemClasses = {

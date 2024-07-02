@@ -4,6 +4,7 @@ import { Divider } from 'primereact/divider';
 import { FaEnvelope, FaIdCard } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { CopyText } from "./clickToCopy";
+import Image from "next/image";
 
 export const SectionInformation = () => {
     const aboutMe = `Como desarrollador junior con experiencia en la creación 
@@ -19,22 +20,22 @@ export const SectionInformation = () => {
 
     const informationDescription = [
         {
-            icon: <FaIdCard />,
+            icon: <Image src="/imgs/idCard.png" alt="ID" width={50} height={50} />,
             title: "Cedula de ciudadanía",
             value: <strong><CopyText text="1037632160" /></strong>
         },
         {
-            icon: <FaMapMarkerAlt />,
+            icon:<Image src="/imgs/locate.png" alt="ID" width={50} height={50} />,
             title: "Dirección",
             value: <strong><CopyText text="Calle 37 sur # 33 - 77 Envigado Antioquia" /></strong>
         },
         {
-            icon: <FaIdCard />,
+            icon: <Image src="/imgs/telefono.png" alt="ID" width={50} height={50} />,
             title: "Número de teléfono",
             value: <strong>+57<CopyText text="3006483858" /></strong>
         },
         {
-            icon: <FaEnvelope />,
+            icon: <Image src="/imgs/mail.png" alt="ID" width={50} height={50} />,
             title: "Correo electrónico",
             value: <strong><CopyText text="jdps106@hotmail.com" /></strong>
         }
