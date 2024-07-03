@@ -45,12 +45,12 @@ export const SectionInformation = () => {
         <div className="flex flex-col items-center   py-10">
             <div className="flex flex-wrap items-center justify-center w-full px-10">
 
-                <div className="flex flex-col text-center gap-4 h-full w-full flex-wrap md:w-[30%]">
+                <div className="flex flex-col text-center gap-4 h-full w-full flex-wrap md:w-[40%] md:pr-10">
                     <h1 className="text-2xl font-bold mb-4">Informcion Personal</h1>
 
-                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                    <div className="flex flex-wrap sm:flex-nowrap md:flex-wrap items-center justify-center w-full pr-2">
                         {informationDescription.map((item) => (
-                            <div key={item.title} className="flex flex-col items-center flex-wrap text-center ">
+                            <div key={item.title} className="flex flex-col w-full md:w-1/2 items-center flex-wrap text-center ">
                                 <div className="text-[40px]">{item.icon}</div>
                                 <p className="text-gray-300 text-sm">{item.title} </p>
                                 <p className="text-gray-300 text-sm">{item.value}</p>
@@ -59,7 +59,7 @@ export const SectionInformation = () => {
                     </div>
                 </div>
 
-                <div className="md:w-[70%]">
+                <div className="md:w-[60%]">
                     <h1 className="text-3xl font-bold mb-4 text-white">Sobre Mi...</h1>
 
                     <p className="md:border-l-2 md:border-dashed border-gray-500 p-2 md:p-10 text-gray-300 text-justify">{aboutMe}</p>

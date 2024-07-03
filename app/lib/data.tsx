@@ -2,19 +2,19 @@ import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 
 export const navLinks = [
   {
-    id: "about",
+    id: "1",
     label: "Sobre Mi",
     link: '/',
   },
   {
-    id: "skills",
-    label: "Habilidades",
-    link: '/skills',
+    id: "2",
+    label: "Portafolio",
+    link: '/portafolio',
   },
   {
-    id: "contact",
-    label: "habilidades",
-    link: '/contacts',
+    id: "3",
+    label: "Contactame",
+    link: '/contact',
 
   }
 ];

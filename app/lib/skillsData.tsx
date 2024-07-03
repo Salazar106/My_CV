@@ -1,9 +1,6 @@
-import { Avatar, Tooltip, image } from "@nextui-org/react";
-import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import Porcent from "../ui/aboutMe/knob";
-import {Image} from "@nextui-org/react";
 import NextImage from "next/image";
-import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
+import AcordeonContent from "../ui/aboutMe/acordeonSkillContent";
 
 
   const FrontEnd = [
@@ -53,7 +50,7 @@ import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
     },
     {
       key: "3",
-      nombre: "JavaScript",
+      nombre: "JS",
       image: "/imgs/js.png",
       description: <Porcent values={100} />,
       habilidades:[
@@ -101,7 +98,7 @@ import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
     },
     {
       key: "5",
-      nombre: "React.js",
+      nombre: "React",
       image: "/imgs/react-1.svg",
       description: <Porcent values={80} />,
      habilidades:[
@@ -125,7 +122,7 @@ import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
     },
     {
       key: "6",
-      nombre: "Next.js",
+      nombre: "Next",
       image: "/imgs/next.svg",
       description: <Porcent values={80} />,
      habilidades:[
@@ -177,7 +174,7 @@ import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
   const BackEnd = [
     {
       key: "1",
-      nombre: "Javascript",
+      nombre: "JS",
       image: "/imgs/js.svg",
       description: <Porcent values={100} />,
      habilidades:[
@@ -201,7 +198,7 @@ import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
     },
     {
       key: "2",
-      nombre: "Typescript",
+      nombre: "TS",
       image: "/imgs/typescript.svg",
       description: <Porcent values={90} />,
       habilidades:''
@@ -256,7 +253,7 @@ import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
     },
     {
       key: "5",
-      nombre: "Node.js",
+      nombre: "Node",
       image: "/imgs/node.svg",
       description: <Porcent values={"80"} />,
       habilidades:[
@@ -304,6 +301,32 @@ import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
     }
   ]
 
+  const DataBase = [
+    {
+      key: "1",
+      nombre: "MySQL",
+      image: "/imgs/mysql.svg",
+      description: <Porcent values={90} />,
+     habilidades:[
+        {
+          tittle: "Estructuracion de contenido",
+          description:'Experto en la creación de estructuras semánticas utilizando etiquetas HTML adecuadas, asegurando que el contenido sea accesible y fácil de entender tanto para usuarios como para motores de búsqueda.'
+        },
+      ]
+    },
+    {
+      key: "2",
+      nombre: "MongoDB",
+      image: "/imgs/mongodb.svg",
+      description: <Porcent values={60} />,
+     habilidades:[
+        {
+          tittle: "Estructuracion de contenido",
+          description:'Experto en la creación de estructuras semánticas utilizando etiquetas HTML adecuadas, asegurando que el contenido sea accesible y fácil de entender tanto para usuarios como para motores de búsqueda.'
+        },
+      ]
+    }
+  ]
   export const dataAcordeon = [
     {
       key: "1",
@@ -324,7 +347,7 @@ import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
       label: "Bases de Datos",
       startContent: <NextImage  src="/imgs/db.svg" alt="DataBase" width={35} height={35} />,
       title: "Preciona para ver detalles",
-      content: <AcordeonContent data={BackEnd} />
+      content: <AcordeonContent data={DataBase} />
     },
     {
       key: "4",
