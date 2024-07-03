@@ -3,8 +3,7 @@ import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import Porcent from "../ui/aboutMe/knob";
 import {Image} from "@nextui-org/react";
 import NextImage from "next/image";
-import AcordeonContent from "../ui/aboutMe/AcordeonSkillContent"
-
+import AcordeonContent from "@/app/ui/aboutMe/AcordeonSkillContent"
 
 
   const FrontEnd = [

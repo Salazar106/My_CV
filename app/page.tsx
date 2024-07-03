@@ -1,7 +1,7 @@
 import { SectionInformation } from "./ui/aboutMe/aboutMe";
 import Acordeon from "./ui/aboutMe/acordeon";
 import dataAcordeon from "@/app/lib/skillsData";
-import experienceData from "@/app/lib/experienceData";
+import {experienceData} from "./lib/experienceData";
 
 export default function Home() {
  

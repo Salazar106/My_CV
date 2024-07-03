@@ -9,6 +9,7 @@ export default function Acordeon({dataAcordeon}: any) {
     trigger: "px-2 py-0 data-[hover=true]:bg-[#044e51] rounded-lg h-14 flex items-center",
     indicator: "text-medium",
     content: "text-small px-2",
+    subtitle: "before:text-white before:text-xl before:absolute",
   };
 
   return (
