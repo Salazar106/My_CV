@@ -3,7 +3,7 @@ import Porcent from "./knob";
 import { Divider } from 'primereact/divider';
 import { FaEnvelope, FaIdCard } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { CopyText } from "./clickToCopy";
+import { CopyText } from "../general/clickToCopy";
 import Image from "next/image";
 
 export const SectionInformation = () => {

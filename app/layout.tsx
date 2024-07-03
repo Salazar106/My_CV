@@ -4,9 +4,9 @@ import "./globals.css";
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import { Header } from "./ui/header";
+import { Header } from "./ui/general/header";
 import { NextUIProvider } from "@nextui-org/react";
-import Footer from "./ui/footer";
+import Footer from "./ui/general/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 

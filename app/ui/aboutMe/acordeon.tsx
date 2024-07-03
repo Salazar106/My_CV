@@ -1,9 +1,8 @@
 'use client';
 import React from "react";
 import { Accordion, AccordionItem, Avatar } from "@nextui-org/react";
-import dataAcordeon from "../lib/data";
 
-export default function Acordeon() {
+export default function Acordeon({dataAcordeon}: any) {
   const itemClasses = {
     base: "py-0 w-full",
     title: "text-large text-white font-bold",
@@ -13,7 +12,7 @@ export default function Acordeon() {
   };
 
   return (
-    <div className="w-[80%] p-5 bg-[#03151c] shadow-large rounded-lg">
+    <div className="w-full p-5 bg-[#03151c] shadow-large rounded-lg">
       <Accordion itemClasses={itemClasses}>
         {dataAcordeon && dataAcordeon.map((item: any, index: number) => (
           <AccordionItem

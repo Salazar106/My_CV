@@ -1,10 +1,10 @@
-import Acordeon from "../ui/acordeon";
+import Acordeon from "../ui/aboutMe/acordeon";
 
 
 export default function Skills (){
 
     return(
-        <div className="flex w-full max-h-[30%]  justify-center items-center gap-10 mb-10">
+        <div className="flex w-full h-full flex-col items-center justify-center">
           <Acordeon/>
       </div>
     )
