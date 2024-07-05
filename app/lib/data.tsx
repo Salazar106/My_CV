@@ -31,3 +31,42 @@ export const socialLinks=[
     link:'https://github.com/Salazar106',
   }
 ]
+
+export const productData = [
+  {
+    id: "1",
+    title: "Bunuelo",
+    description:"de queso y arina",
+    precio:1000
+  },
+  {
+    id: "2",
+    title: "Bunuelo",
+    description:"de queso y arina",
+    precio:1000
+  },
+  {
+    id: "3",
+    title: "Bunuelo",
+    description:"de queso y arina",
+    precio:1000
+  },
+  {
+    id: "4",
+    title: "Bunuelo",
+    description:"de queso y arina",
+    precio:1000
+  },
+  {
+    id: "5",
+    title: "Bunuelo",
+    description:"de queso y arina",
+    precio:1000
+  },
+  {
+    id: "6",
+    title: "Bunuelo",
+    description:"de queso y arina",
+    precio:1000
+  }
+] 

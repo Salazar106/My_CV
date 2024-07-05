@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Link } from '@nextui-org/react';
 import { usePathname } from 'next/navigation';
 import { socialLinks, navLinks } from "../../lib/data";
-
+import { motion } from 'framer-motion';
 
 export const Header: FC = () => {
 
@@ -33,14 +33,20 @@ export const Header: FC = () => {
   return (
     <div className='flex flex-col'>
       <div className='min-h-44 md:h-56 lg:h-64 bg-gradient-to-t from-[#03151c] to-[#045356] w-full  flex flex-wrap-reverse justify-center md:justify-between items-center'>
-        <div className='flex flex-col items-start px-10 md:w-[33.33%]'>
+        <motion.div
+          initial={{ opacity: 0, x:-100 }}
+          whileInView={{ opacity: 1, x:0 }}
+          transition={{ duration: 0.5 }}
+          className='flex flex-col items-start px-10 md:w-[33.33%]'
+        >
           <p className='text-sm text-white'>Full Stact Deveoper</p>
           <h1 className='text-2xl text-white font-bold'>Jefersson Daniel</h1>
           <h1 className='text-2xl text-white font-bold'>Peña Salazar</h1>
-        </div>
+        </motion.div>
         
         <div className='w-[33.33% flex justify-center'>
-          <Image src="/imgs/profile.png" alt="Descripción de la imagen" width={200} height={300}/>
+          <Image
+            src="/imgs/profile.png" alt="Foto" width={200} height={300}/>
         </div>
         <div className='hidden md:block w-[33.33%] px-10 text-justify bordert-2  '>
           <p>Desarrollador con <strong>2 años</strong> de experiencia en las TI, apacionado por las nuevas tecnologías y la automatización de procesos</p>
