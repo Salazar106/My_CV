@@ -35,37 +35,37 @@ export const socialLinks=[
 export const productData = [
   {
     id: "1",
-    title: "Bunuelo",
+    title: "Buñuelo",
     description:"de queso y arina",
     precio:1000
   },
   {
     id: "2",
-    title: "Bunuelo",
+    title: "Empanada",
     description:"de queso y arina",
     precio:1000
   },
   {
     id: "3",
-    title: "Bunuelo",
+    title: "Palito de Queso",
     description:"de queso y arina",
     precio:1000
   },
   {
     id: "4",
-    title: "Bunuelo",
+    title: "Pastel de Queso",
     description:"de queso y arina",
     precio:1000
   },
   {
     id: "5",
-    title: "Bunuelo",
+    title: "Pastel de Pollo",
     description:"de queso y arina",
     precio:1000
   },
   {
     id: "6",
-    title: "Bunuelo",
+    title: "Pan de Queso",
     description:"de queso y arina",
     precio:1000
   }
