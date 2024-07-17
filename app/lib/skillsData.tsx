@@ -1,6 +1,6 @@
+import AcordeonContent from "../ui/aboutMe/acordeonSkillContent";
 import Porcent from "../ui/aboutMe/knob";
 import NextImage from "next/image";
-import AcordeonContent from "../ui/aboutMe/acordeonSkillContent";
 
 
   const FrontEnd = [
@@ -170,7 +170,6 @@ import AcordeonContent from "../ui/aboutMe/acordeonSkillContent";
     }
   ]
   
-  
   const BackEnd = [
     {
       key: "1",
@@ -327,6 +326,7 @@ import AcordeonContent from "../ui/aboutMe/acordeonSkillContent";
       ]
     }
   ]
+
   export const dataAcordeon = [
     {
       key: "1",
@@ -356,6 +356,6 @@ import AcordeonContent from "../ui/aboutMe/acordeonSkillContent";
       title: "Preciona para ver detalles",
       content: <AcordeonContent data={BackEnd} />
     },
-  
   ]
+
   export default dataAcordeon;

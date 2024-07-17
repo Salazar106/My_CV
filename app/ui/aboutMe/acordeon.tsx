@@ -23,7 +23,6 @@ export default function Acordeon({dataAcordeon}: any) {
         {dataAcordeon && dataAcordeon.map((item: any, index: number) => (
           <AccordionItem
             key={index}
-            // aria-label={item.label}
             startContent={item.startContent}
             subtitle={item.title}
             title={item.label}
