@@ -1,4 +1,4 @@
-import AcordeonContent from "../ui/aboutMe/acordeonSkillContent";
+import { AcordeonContent } from "../ui/aboutMe/acordeonSkillContent";
 import Porcent from "../ui/aboutMe/knob";
 import NextImage from "next/image";
 
