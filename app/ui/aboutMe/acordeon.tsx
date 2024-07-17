@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
-import { Accordion, AccordionItem, Avatar } from "@nextui-org/react";
-import { motion } from "framer-motion";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+
 
 export default function Acordeon({dataAcordeon}: any) {
   const itemClasses = {
@@ -14,11 +14,7 @@ export default function Acordeon({dataAcordeon}: any) {
   };
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      className="w-full p-5 bg-[#03151c] shadow-large rounded-lg">
+    <div className="w-full p-5 bg-[#03151c] shadow-large rounded-lg">
       <Accordion itemClasses={itemClasses}>
         {dataAcordeon && dataAcordeon.map((item: any, index: number) => (
           <AccordionItem
@@ -35,7 +31,7 @@ export default function Acordeon({dataAcordeon}: any) {
         ))}
 
       </Accordion>
-    </motion.div>
+    </div>
 
   );
 }

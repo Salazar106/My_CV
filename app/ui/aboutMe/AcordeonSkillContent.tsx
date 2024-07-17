@@ -2,7 +2,7 @@ import { Tooltip } from "@nextui-org/react"
 import NextImage from "next/image"
 import { Image } from "@nextui-org/react"
 
-const AcordeonContent = ({ data }: any) => {
+export const AcordeonContent = ({ data }: any) => {
 
     return (
       <div className="flex flex-wrap justify-end md:justify-center items-start gap-5 h-full w-full px-10 ">
@@ -44,4 +44,3 @@ const AcordeonContent = ({ data }: any) => {
     )
   }
 
-export default AcordeonContent
