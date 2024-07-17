@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -19,6 +20,42 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #010b0e;
+}
+
+.footersito{
+  background-image: url("../public/imgs/bgFooter.svg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px; 
+  position: relative;
+}
+
+/* Fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #343637;
+}
+
+/* Thumb (parte deslizante) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #03242a; /* Color del thumb */
+  border-radius: 4px; /* Borde redondeado del thumb */
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent; /* Fondo transparente */
+}
+
+.contact-form {
+  background-image: url("/imgs/Rectangle 8.svg");
+  background-repeat: no-repeat;
+   background-size:auto;
+  
+  /* z-index: -1; */
+  border-radius: 10px;
 }
 
 @layer utilities {

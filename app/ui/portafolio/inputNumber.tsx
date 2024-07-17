@@ -2,8 +2,6 @@
 import { useState } from "react";
 
 export const InputNumber = ({ onValueChange, value }: { onValueChange: any, value: number }) => {
-    const menor = "<";
-    const mayor = ">";
 
     const handleValueChange = (newValue: number) => {
         onValueChange(newValue);
@@ -18,7 +16,7 @@ export const InputNumber = ({ onValueChange, value }: { onValueChange: any, valu
                     className="rounded-full text-white transition-all duration-100 hover:scale-150 text-center focus:outline-none"
                     onClick={() => handleValueChange(value <= 10 ? 1 : value - 10)}
                 >
-                    <p>{menor}</p>
+                    &#9664;
                 </button>
                 <button
                     type="button"
@@ -52,7 +50,7 @@ export const InputNumber = ({ onValueChange, value }: { onValueChange: any, valu
                     className="rounded-full text-white transition-all duration-100 hover:scale-150 text-center focus:outline-none"
                     onClick={() => handleValueChange(value < 6 ? 10 : value + 10)}
                 >
-                    <p>{mayor}</p>
+                    &#9654;
                 </button>
             </div>
         </div>

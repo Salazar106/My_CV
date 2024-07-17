@@ -8,9 +8,12 @@ import { AnimateDiv } from "../ui/contactMe/animateDiv";
 export default function ContactsPage() {
     return (
 
-        <div className="w-full h-full">
+        <div className="flex w-full h-full">
+            {/* <div className="contact-form w-[500px]">
+                <p>sapiente praesentium officia explicabo incidunt, quam perferendis maiores porro? Cumque placeat quas perferendis repudiandae. Eligendi!</p>
+            </div> */}
             <ContactMeForm/>
-            <AnimateDiv/>
+            {/* <AnimateDiv/> */}
         </div>
 
 

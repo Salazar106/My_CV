@@ -1,33 +1,55 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardHeader, CardBody, Image, Button } from "@nextui-org/react";
 import { InputNumber } from "./inputNumber";
 import { FaCartPlus, FaEye } from "react-icons/fa";
+import ProductModal from "./modal";
+import { formatCurrency } from "../../lib/buyCar/data";
 
 export const SellCard = ({ data }: any) => {
+    const [loading, setLoading] = useState(true);
     const [quantities, setQuantities] = useState(data.map(() => 1));
+    const [totalValue, setTotalValue] = useState(0);
+    const [totals, setTotals] = useState(data.map((item:any )=> item.precio));
+
+
+    useEffect(() => {
+        setTimeout(() => {
+          setLoading(false);
+        }, 2000); // Simula una carga de datos de 2 segundos
+      }, []);
 
     const handleValueChange = (index: number, newValue: number) => {
         const newQuantities = [...quantities];
         newQuantities[index] = newValue;
         setQuantities(newQuantities);
+
+        const newTotals = [...totals];
+        newTotals[index] = newValue * data[index].precio;
+        setTotals(newTotals);
+
+        setTotalValue(newQuantities[index] * data[index].precio);
     };
 
     const handleSubmit = (index: number) => {
         console.log(`${data[index].title}:`, quantities[index]);
         setQuantities(quantities.map(() => 1));
+        setTotals(data.map((item:any) => item.precio));
+
     };
+    
 
     return (
         <div className="flex flex-wrap gap-3 justify-center">
             {data.map((item: any, index: number) => (
                 <Card key={item.id} className="py-4 bg-sky-500">
-                    <CardBody className="overflow-visible py-2">
+                    <CardBody className="overflow-visible py-2 flex justify-center w-full">
                         <Image
                             isZoomed
                             alt="Card background"
                             className="object-cover rounded-xl"
+                            // src='/imgs/js.svg'
                             src="https://nextui.org/images/hero-card-complete.jpeg"
                             width={270}
                         />
@@ -35,20 +57,22 @@ export const SellCard = ({ data }: any) => {
                     <CardHeader className="w-full pb-0 pt-2 px-4 flex-col items-start cursor-default">
                         <div className="w-full flex items-center justify-between">
                             <p className="text-tiny uppercase font-bold">{item.title}</p>
-                            <Button isIconOnly className="bg-transparent text-white">
-                                <FaEye />
-                            </Button>
+                            <ProductModal data={item}/>
                         </div>
                         <small className="text-default-500 ">{item.description}</small>
                         <div className="flex w-full h-20 justify-between items-center">
                             <div>
                                 <p className="text-large"><strong>Valor Unitario</strong></p>
-                                <p>${item.precio}</p>
+                                <p>{formatCurrency(item.precio)}</p>
                             </div>
                             <InputNumber 
                                 onValueChange={(newValue:any) => handleValueChange(index, newValue)} 
                                 value={quantities[index]} 
                             />
+                        </div>
+                        <div className="flex w-full  justify-between items-center">
+                            <p className="w-1/2">Total Producto:</p>
+                            <p className="text-white font-bold w-1/2 text-center"> {formatCurrency(totals[index])}</p>
                         </div>
                         <Button 
                             className="w-full" 

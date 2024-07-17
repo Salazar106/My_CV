@@ -1,6 +1,8 @@
+
+
 const Footer = () => {
     return (
-      <footer className="relative w-full   text-white text-center overflow-hidden">
+      <footer className="footersito flex items-end w-full  h-72 text-white text-center overflow-hidden">
        
         {/* Contenido del footer */}
         <div className="relative z-10 p-5 max-w-full min-w-full mx-auto">
